@@ -18,7 +18,7 @@
     <!-- Open Graph for Facebook / WhatsApp -->
     <meta property="og:title" content="Laxman Yadav Dairy – Pure & Organic Milk Delivery">
     <meta property="og:description" content="Fresh cow milk delivered every morning — no mixing, no compromise. Order now!">
-    <meta property="og:image" content="https://laxman-yadav-dairy.netlify.app/milk1.png">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&q=80">
     <meta property="og:url" content="https://laxman-yadav-dairy.netlify.app/">
     <meta property="og:type" content="website">
 
@@ -36,11 +36,11 @@
 
     <style>
         :root {
-            --primary: #27ae60;      /* Fresh Grass Green */
-            --secondary: #2ecc71;    /* Lighter Green */
-            --accent: #f1c40f;       /* Sun/Butter Yellow */
+            --primary: #27ae60;       /* Fresh Grass Green */
+            --secondary: #2ecc71;     /* Lighter Green */
+            --accent: #f1c40f;        /* Sun/Butter Yellow */
             --dark: #2c3e50;
-            --light: #f9fbfd;        /* Milk White */
+            --light: #f9fbfd;         /* Milk White */
             --glass: rgba(255, 255, 255, 0.95);
             --shadow: 0 15px 35px rgba(0,0,0,0.1);
         }
@@ -131,7 +131,7 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
             padding: 10px 5%; /* Shrink slightly */
         }
-        .brand { font-size: 1.5rem; font-weight: 700; color: white; text-shadow: 0 2px 5px rgba(0,0,0,0.3); transition: color 0.3s; }
+        .brand { font-size: 1.5rem; font-weight: 700; color: white; text-shadow: 0 2px 5px rgba(0,0,0,0.3); transition: color 0.3s; display: flex; align-items: center; gap: 10px;}
         nav.scrolled .brand { color: var(--primary); text-shadow: none; }
         
         .nav-links a { text-decoration: none; color: white; margin-left: 20px; font-weight: 500; transition: 0.3s; text-shadow: 0 1px 3px rgba(0,0,0,0.5); }
@@ -152,6 +152,7 @@
             color: white;
             overflow: hidden;
             padding-top: 60px;
+            background-color: #222; /* Fallback color */
         }
 
         .hero-bg {
@@ -399,11 +400,12 @@
     <!-- Hero Section -->
     <header id="home">
         <div class="hero-bg">
-            <img src="m1.png" class="active">
-            <img src="m2.png">
-            <img src="m3.png">
-            <img src="m4.png"> 
-            <img src="m5.png"> 
+            <!-- Using Unsplash Images so they work immediately in preview -->
+            <img src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?auto=format&fit=crop&q=80&w=1920" class="active" alt="Cows in field">
+            <img src="https://images.unsplash.com/photo-1528659102220-4dfc9447d25e?auto=format&fit=crop&q=80&w=1920" alt="Fresh Milk">
+            <img src="https://images.unsplash.com/photo-1546445317-29f4545e9d53?auto=format&fit=crop&q=80&w=1920" alt="Dairy Farm">
+            <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&q=80&w=1920" alt="Green Pastures"> 
+            <img src="https://images.unsplash.com/photo-1596796677983-5c7774d6c6e1?auto=format&fit=crop&q=80&w=1920" alt="Pouring Milk"> 
         </div>
         
         <!-- Floating Particles Container -->
@@ -489,7 +491,7 @@
             <p>Order via WhatsApp instantly. No login required.</p>
             <br>
             <p><i class="fas fa-phone-alt"></i> Call Us: +91 7079366053</p>
-            <p><i class="fas fa-map-marker-alt"></i> Delivery Areas: Gopalpur Colony, Gopalapur, Rajpura,Tiltoria.</p>
+            <p><i class="fas fa-map-marker-alt"></i> Delivery Areas: Gopalpur Colony, Gopalapur, Rajpura, Tiltoria.</p>
         </div>
         
         <div class="order-form">
@@ -568,7 +570,7 @@
             cursorDot.style.left = `${posX}px`;
             cursorDot.style.top = `${posY}px`;
 
-            // Outline follows with slight delay (handled by CSS transition usually, but let's animate)
+            // Outline follows with slight delay
             cursorOutline.style.left = `${posX}px`;
             cursorOutline.style.top = `${posY}px`;
         });
