@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://laxman-yadav-dairy.netlify.app/sitemap.xml
