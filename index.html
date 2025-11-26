@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laxman Yadav’s Dairy | Pure & Organic</title>
     
+    <!-- Google Site Verification Tag -->
+    <meta name="google-site-verification" content="h5y7fvBnL_i-45UxkrhGPPPpGw3RSYhImYf4tptdI8M" />
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <!-- Icons -->
@@ -677,6 +680,7 @@
         let slideIndex = 0;
         const slides = document.querySelectorAll(".hero-bg img");
         function showSlides() {
+            if (slides.length === 0) return; // Prevent errors if no images
             slides.forEach(slide => slide.classList.remove('active'));
             slideIndex++;
             if (slideIndex > slides.length) {slideIndex = 1}
